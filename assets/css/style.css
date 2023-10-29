@@ -198,20 +198,24 @@
 .latest-trends {
   background: #FFF;
   display: flex;
-  padding: 70px 0px;
-  flex-direction: column;
-  gap: 64px;
-}
-
-.latest-trends .newsletter {
-  display: flex;
   justify-content: center;
+
+}
+
+.latest-trends .news-content {
+  padding: 70px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-trends .news-content .newsletter {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 189px;
 }
 
 
-.latest-trends .newsletter .title {
+.latest-trends .news-content .newsletter .title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -219,7 +223,7 @@
   gap: 15px;
 }
 
-.latest-trends .newsletter .title h2 {
+.latest-trends .news-content .newsletter .title h2 {
   color: #121212;
   font-family: Merriweather;
   font-size: 35px;
@@ -229,7 +233,7 @@
   letter-spacing: -0.3px;
 }
 
-.latest-trends .newsletter .title p {
+.latest-trends .news-content .newsletter .title p {
   color: rgba(112, 100, 88, 0.90);
   font-family: Varta;
   font-size: 18px;
@@ -238,14 +242,14 @@
   line-height: 25px;
 }
 
-.latest-trends .newsletter .form {
+.latest-trends .news-content .newsletter .form {
   display: flex;
   align-items: flex-end;
   height: 50px;
   gap: 16px;
 }
 
-.latest-trends .newsletter .form input {
+.latest-trends .news-content .newsletter .form input {
   display: flex;
   height: 50px;
   width: 296.095px;
@@ -257,7 +261,7 @@
   background: rgba(243, 238, 232, 0.30);
 }
 
-.latest-trends .newsletter .form input::placeholder {
+.latest-trends .news-content .newsletter .form input::placeholder {
   color: rgba(112, 100, 88, 0.90);
   font-family: Varta;
   font-size: 18px;
@@ -266,7 +270,7 @@
   line-height: 25px;
 }
 
-.latest-trends .newsletter .form button {
+.latest-trends .news-content .newsletter .form button {
   display: flex;
   width: 143.113px;
   height: 50px;
@@ -287,20 +291,21 @@
   letter-spacing: 0.3px;
 }
 
-.latest-trends .slides {
+.latest-trends .news-content .slides {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  margin-top: 64px;
+  margin-bottom: 40px;
   gap: 30px;
 }
 
-.latest-trends .inspiration {
+.latest-trends .news-content .inspiration {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.latest-trends .inspiration h3 {
+.latest-trends .news-content .inspiration h3 {
   display: flex;
   width: 360px;
   flex-direction: column;
@@ -315,7 +320,7 @@
   letter-spacing: -0.3px;
 }
 
-.latest-trends .inspiration p {
+.latest-trends .news-content .inspiration p {
   width: 750px;
   color: #706458;
   font-family: Varta;
@@ -329,20 +334,21 @@
   background: #F3EEE8;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 70px 150px 64px;
-  gap: 48px;
 }
 
 .footter-section .footer-content {
+  width: 1440px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
+  flex-direction: column;
+  padding: 70px 150px 64px;
 }
 
-.footter-section .footer-content .logo {
+.footter-section .footer-content .footer-logo-links-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footter-section .footer-content .footer-logo-links-blog .logo {
   color: #534B42;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Merriweather;
@@ -354,13 +360,18 @@
   text-decoration: none;
 }
 
-.footter-section .footer-content .group-links {
+.footter-section .footer-content .footer-logo-links-blog .group-links {
+  width: 683px;
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 48px;
 }
 
-.footter-section .footer-content .group-links .list-links h5 {
+.footter-section .footer-content .footer-logo-links-blog .group-links .list-links {
+  width: 135px;
+}
+
+.footter-section .footer-content .footer-logo-links-blog .group-links .list-links h5 {
   color: #534B42;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Varta;
@@ -372,16 +383,16 @@
   margin-bottom: 22px;
 }
 
-.footter-section .footer-content .group-links .list-links ul {
+.footter-section .footer-content .footer-logo-links-blog .group-links .list-links ul {
   display: grid;
   gap: 12px;
 }
 
-.footter-section .footer-content .group-links .list-links ul li {
+.footter-section .footer-content .footer-logo-links-blog .group-links .list-links ul li {
   list-style: none;
 }
 
-.footter-section .footer-content .group-links .list-links ul li a {
+.footter-section .footer-content .footer-logo-links-blog .group-links .list-links ul li a {
   color: #706458;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Varta;
@@ -393,15 +404,13 @@
   margin-bottom: 12px;
 }
 
-
-.footter-section .footer-content .footer-blog {
-  display: flex;
+.footter-section .footer-content .footer-logo-links-blog .footer-blog {
   width: 235px;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-.footter-section .footer-content .footer-blog h5 {
+.footter-section .footer-content .footer-logo-links-blog .footer-blog h5 {
   color: #534B42;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Varta;
@@ -413,7 +422,7 @@
   margin-bottom: 22px;
 }
 
-.footter-section .footer-content .footer-blog .post-background {
+.footter-section .footer-content .footer-logo-links-blog .footer-blog .post-background {
   height: 160px;
   align-self: stretch;
   background-image: url(/assets/media/FooterColumnBackground.png);
@@ -421,7 +430,7 @@
   background-repeat: no-repeat;
 }
 
-.footter-section .footer-content .footer-blog p {
+.footter-section .footer-content .footer-logo-links-blog .footer-blog p {
   color: #706458;
   font-family: Varta;
   font-size: 16px;
@@ -431,29 +440,31 @@
   margin: 15px 0;
 }
 
-.footter-section .social-networks {
+.footter-section .footer-content .social-networks-legals {
+  margin-top: 48px;
+}
+
+.footter-section .footer-content .social-networks-legals .social-networks {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  align-self: stretch;
 }
 
-.footter-section .legals {
+.footter-section .footer-content .social-networks-legals .legals {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;
 }
 
-.footter-section .legals .legals-links {
+.footter-section .footer-content .social-networks-legals .legals .legals-links {
   display: flex;
   align-items: flex-start;
   gap: 30px;
 }
 
-.footter-section .legals p,
-.footter-section .legals .legals-links p {
+.footter-section .footer-content .social-networks-legals .legals p,
+.footter-section .footer-content .social-networks-legals .legals .legals-links p {
   color: rgba(112, 100, 88, 0.70);
   font-family: Varta;
   font-size: 18px;
