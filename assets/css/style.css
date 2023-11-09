@@ -203,7 +203,6 @@
   background: #FFF;
   display: flex;
   justify-content: center;
-
 }
 
 .latest-trends .news-content {
@@ -550,16 +549,22 @@
     z-index: 1;
   }
 
+
+  .our-services {
+    width: 100%;
+  }
+
   .our-services .our-services-container {
+    width: 100%;
     padding: 48px 32px;
     flex-direction: column;
-    /* gap: 32px; */
+    gap: 32px;
   }
 
   .our-services .our-services-container .services-left-side {
     width: 100%;
+    gap: 32px;
   }
-
 
   .our-services .our-services-container .services-left-side p {
     color: #534B42;
@@ -569,4 +574,96 @@
     line-height: 40px;
     letter-spacing: -0.3px;
   }
+
+  .our-services .our-services-container .services-right-side {
+    width: 100%;
+    padding-top: 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .our-services .our-services-container .services-right-side .card {
+    width: 100%;
+  }
+
+  .our-services .our-services-container .services-right-side .card {
+    margin: 0;
+  }
+
+  .latest-trends {
+    width: 100%;
+    display: contents;
+  }
+
+  .latest-trends .news-content {
+    width: 100%;
+    height: auto;
+    padding: 48px 32px;
+    gap: 64px;
+  }
+
+  .latest-trends .news-content .newsletter {
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .latest-trends .news-content .newsletter .title {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .latest-trends .news-content .newsletter .form {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: unset;
+  }
+
+  .latest-trends .news-content .newsletter .form input {
+    padding: 12px 15px;
+    height: autos;
+  }
+
+  .latest-trends .news-content .newsletter .form button {
+    width: 100%;
+    padding: 12px 30px 13px 30px;
+  }
+
+  .latest-trends .news-content .slides {
+    margin: unset;
+    flex-direction: column;
+    gap: 20px;
+    order: 3;
+  }
+
+  .latest-trends .news-content .slides img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .latest-trends .news-content .inspiration {
+    width: 100%;
+
+    flex-direction: column;
+    order: 2;
+  }
+
+  .latest-trends .news-content .inspiration p {
+    width: 100%;
+  }
+
+
+  .footter-section .footer-content {
+    width: 100%;
+  }
+
+  .footter-section .footer-content .footer-logo-links-blog {
+    flex-direction: column;
+  }
+
+  .footter-section .footer-content .footer-logo-links-blog .group-links {
+    flex-direction: column;
+  }
+
 }
