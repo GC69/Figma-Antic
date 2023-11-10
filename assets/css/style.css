@@ -476,8 +476,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    width: 100%;
+  }
+
+  body {
+    min-width: 320px;
+    width: 100%;
+  }
+
   .page-header {
-    min-width: 375px;
     position: relative;
   }
 
@@ -505,12 +513,14 @@
 
   .page-header nav img {
     content: url("/assets/icons/Menu.png");
+    width: 24px;
+    height: 12px;
   }
 
   .page-header .header-container .left-side {
+    width: 100%;
     position: absolute;
     top: 150px;
-    width: 100%;
     padding: 25px;
     z-index: 2;
     gap: 24px;
@@ -550,12 +560,7 @@
   }
 
 
-  .our-services {
-    width: 100%;
-  }
-
   .our-services .our-services-container {
-    width: 100%;
     padding: 48px 32px;
     flex-direction: column;
     gap: 32px;
@@ -563,6 +568,7 @@
 
   .our-services .our-services-container .services-left-side {
     width: 100%;
+    padding: unset;
     gap: 32px;
   }
 
@@ -575,6 +581,10 @@
     letter-spacing: -0.3px;
   }
 
+  .more img {
+    width: 20px;
+  }
+
   .our-services .our-services-container .services-right-side {
     width: 100%;
     padding-top: 0;
@@ -584,26 +594,16 @@
 
   .our-services .our-services-container .services-right-side .card {
     width: 100%;
-  }
-
-  .our-services .our-services-container .services-right-side .card {
     margin: 0;
   }
 
-  .latest-trends {
-    width: 100%;
-    display: contents;
-  }
 
   .latest-trends .news-content {
-    width: 100%;
-    height: auto;
     padding: 48px 32px;
     gap: 64px;
   }
 
   .latest-trends .news-content .newsletter {
-    width: 100%;
     flex-direction: column;
     gap: 32px;
   }
@@ -622,7 +622,8 @@
 
   .latest-trends .news-content .newsletter .form input {
     padding: 12px 15px;
-    height: autos;
+    width: 100%;
+    height: auto;
   }
 
   .latest-trends .news-content .newsletter .form button {
@@ -644,9 +645,13 @@
 
   .latest-trends .news-content .inspiration {
     width: 100%;
-
     flex-direction: column;
     order: 2;
+  }
+
+  .latest-trends .news-content .inspiration h3 {
+    width: 100%;
+    font-size: 35px;
   }
 
   .latest-trends .news-content .inspiration p {
@@ -656,14 +661,74 @@
 
   .footter-section .footer-content {
     width: 100%;
+    padding: 48px 32px;
   }
 
   .footter-section .footer-content .footer-logo-links-blog {
     flex-direction: column;
+    gap: 40px;
+  }
+
+  .footter-section .footer-content .footer-logo-links-blog .footer-blog {
+    width: 100%;
+  }
+
+  .footter-section .footer-content .footer-logo-links-blog .logo {
+    display: flex;
+    justify-content: center;
   }
 
   .footter-section .footer-content .footer-logo-links-blog .group-links {
+    width: 100%;
     flex-direction: column;
+    gap: 40px;
   }
 
+  .footter-section .footer-content .footer-logo-links-blog .group-links .list-links h5 {
+    margin-bottom: 10px;
+  }
+
+  .footter-section .footer-content .footer-logo-links-blog .footer-blog h5 {
+    margin-bottom: 20px;
+  }
+
+  .footter-section .footer-content .footer-logo-links-blog .footer-blog .post-background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 192px;
+  }
+
+  .footter-section .footer-content .footer-logo-links-blog .footer-blog p {
+    margin: 16px 0;
+  }
+
+  .footter-section .footer-content .social-networks-legals {
+    margin: unset;
+  }
+
+  .footter-section .footer-content .social-networks-legals .social-networks {
+    padding: 40px 0;
+    gap: 20px;
+  }
+
+  .footter-section .footer-content .social-networks-legals .social-networks a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footter-section .footer-content .social-networks-legals .legals {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footter-section .footer-content .social-networks-legals .legals p {
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footter-section .footer-content .social-networks-legals .legals .legals-links {
+    order: 1;
+    gap: 24px;
+  }
 }
