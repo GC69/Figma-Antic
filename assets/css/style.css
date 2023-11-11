@@ -297,13 +297,14 @@
 .latest-trends .news-content .slides {
   width: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .latest-trends .news-content .slides img {
   max-width: 100%;
+  width: 30%;
   height: auto;
 }
 
@@ -345,13 +346,15 @@
 .footter-section .footer-content {
   padding: 70px 150px 64px;
   max-width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .footter-section .footer-content .footer-logo-links-blog {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 64px;
 }
 
 .footter-section .footer-content .footer-logo-links-blog .logo {
@@ -370,6 +373,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 48px;
 }
 
 .footter-section .footer-content .footer-logo-links-blog .group-links .list-links {
@@ -641,8 +645,7 @@
   }
 
   .latest-trends .news-content .slides img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
   }
 
   .latest-trends .news-content .inspiration {
